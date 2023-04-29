@@ -1,0 +1,140 @@
+/* カレンダーcss */
+@charset "UTF-8";
+
+ /*全体*/
+.calendar_box{
+    /* max-width: 600px; */
+    max-width: 248px;
+    min-height: 370px;
+    margin: 0 auto;
+    color: #666;
+}
+#calendar_header {
+    text-align: center;
+    font-size: 24px;
+    /* font-size: 0.7rem; */
+    width: 100%;
+    margin: 1rem 0 0;
+}
+
+/*カレンダー*/
+#calendar {
+    text-align: center;
+    width: 100%;
+}
+#calendar table {
+    outline: 2px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+}
+#calendar th {
+    color: #666;
+}
+#calendar th, #calendar td {
+    outline: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+/*日曜日、祝祭日*/
+#calendar td:first-child, #calendar .holiday{
+    color: red;
+}
+
+/*土曜日*/
+#calendar td:last-child {
+    color: blue;
+}
+
+/*前後月の日付*/
+#calendar td.disabled {
+    color: #ccc;
+}
+
+/*本日*/
+#calendar td.today {
+    background-color: #D65E72;
+    color: #fff;
+}
+
+/* イベント日 */
+#calendar td.eventDay {
+    position: relative;
+    background-color: #7eb177;
+    color: #fff;
+}
+
+#calendar td.eventDay:hover .balloon{
+    display: inline-block;
+    color: #5d5d5d;
+    width: 330%;                 
+}
+
+/* 休館日 */
+#calendar td.closingDay {
+    position: relative;
+    background-color: #edeaea;
+}
+
+#calendar td.closingDay:hover .balloon{
+    display: inline-block; 
+    width:120%;
+}
+
+.balloon {
+    z-index: 1;
+    position   : absolute;
+    display: none;                          /* 要素を非表示 */
+    background-color: #ffffff; 
+    left : 30%;
+    top : 100%;
+    margin-top : 12px;
+    padding: 4px;
+    font-size: 80%;
+    border: 2px solid #edeaea;
+}
+
+.balloon::before{
+    position: absolute;
+    border-bottom: 12px solid #edeaea;
+    border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+    border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+    top: -12px;                             /* 吹き出し口の位置調整 */
+    left : 5%;                              /* 吹き出し口の横位置 */
+    content: "";
+}
+
+.balloon:after{
+    position: absolute;
+    border-bottom: 10px solid #ffffff;
+    border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+    border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+    top: -9px;                              /* 吹き出し口の位置調整 */
+    left : 5%;                              /* 吹き出し口の横位置 */
+    content: "";
+}
+
+/*ボタン*/
+#calendar_button {
+    position: relative;
+}
+#calendar_button button{
+    cursor: pointer;
+    background: #B78D4A;
+    color: #fff;
+    border: 1px solid #B78D4A;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
+#calendar_button button:hover{
+    background-color: #D4BB92;
+    border-color: #D4BB92;
+}
+.calendar_prev {
+    float: left;
+}
+.calendar_next {
+    float: right;
+}
