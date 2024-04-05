@@ -1,8 +1,8 @@
 # paradisegarden_webpage
 
 ## 概要
-このWebサイトはHTML、JavaScript、cssで構成されているwebサイトです
-（フロント部分のみ、デザイン古め）
+このWebサイトはトップページから二階層目の詳細ページに遷移する多ページのWebサイトです。
+（フロン
 
 
 ## フォルダ構成
@@ -31,7 +31,6 @@ https://snowsystem.net/development/web-server-simple-launch/
 
 ## ページについての解説
 「Paradise Garden」という名前の架空の園芸店のWebサイトです。そのため記載の情報は全て架空のものです。
-
-住所、Map等は新宿御苑の住所になっています。
+架空の店舗のため、店名や住所地名などは全て架空のものとなっています。GoogleMapは実際のMap読み込みをせず、新宿御苑近辺の加工画像を表示しています。
 
 レスポンシブ未対応です。
