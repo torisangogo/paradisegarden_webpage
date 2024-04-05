@@ -541,16 +541,19 @@
 	text-align:center; 
 }
 
-/* プライバシーポリシー　テキストエリア */
-.privacy > .floor_text_area {
-	width: 100%;
-	margin-bottom: 40px;
-	font-size: 1rem;
-	color: #5D5D5D;
-	line-height: 1.1rem;
+/* このサイトについて　テキストエリア */
+.about > .floor_text_area {
+	line-height: 2.4rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #5D5D5D;
 }
 
-/* 会社概要 */
+.link__deco{
+	text-decoration: underline;
+}
+
+/* 会社概要 未使用 */
 .company table {
 	width: 100%;
 	font-size: 1.4rem;
@@ -569,3 +572,5 @@
 	vertical-align: middle;
 	padding-left: 20px;
 }
+
+
