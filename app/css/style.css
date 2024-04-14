@@ -33,6 +33,10 @@
 	line-height: 1rem;
 }
 
+.none{
+	display: none;
+}
+
 /* メニュー汎用 */
 .menu_display {
 	display: flex;

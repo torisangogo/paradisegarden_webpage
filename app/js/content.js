@@ -3,10 +3,10 @@ class Contents {
 	}
 	
 	init(){
-		this.displayContents(`./parts/header.html`,`insertHeader`);
-		this.displayContents(`./parts/sideMenu.html`,`insertSideMenu`);
-		this.displayContents(`./parts/footer.html`,`insertFooter`);
-		this.displayContents(`./parts/copyright.html`,`insertCopyright`);
+		this.displayContents(`/parts/header.html`,`insertHeader`);
+		this.displayContents(`/parts/sideMenu.html`,`insertSideMenu`);
+		this.displayContents(`/parts/footer.html`,`insertFooter`);
+		this.displayContents(`/parts/copyright.html`,`insertCopyright`);
 	}
 	
 	// コンテンツ読み込み

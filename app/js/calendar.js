@@ -12,11 +12,11 @@ class Calendar {
 
     async init() {
         // 祝日CSVデータの読み込み
-        this.holidayList = await this.loadCSVData('../csv/holiday.csv');
+        this.holidayList = await this.loadCSVData('/csv/holiday.csv');
         // イベントCSVデータの読み込み
-        this.eventdayList = await this.loadCSVData('../csv/eventday.csv');
+        this.eventdayList = await this.loadCSVData('/csv/eventday.csv');
         // 休館日CSVデータの読み込み
-        this.closingdayList = await this.loadCSVData('../csv/closingday.csv');
+        this.closingdayList = await this.loadCSVData('/csv/closingday.csv');
         
         // ボタンのセットアップ
 		const $calendarPrev = document.querySelector('.calendar_prev');
